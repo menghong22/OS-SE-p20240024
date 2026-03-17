@@ -1,0 +1,13 @@
+Ign:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+Ign:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+Ign:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+Ign:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+Err:5 http://ports.ubuntu.com/ubuntu-ports noble Release
+  404  Not Found [IP: 91.189.92.20 80]
+Err:6 http://ports.ubuntu.com/ubuntu-ports noble-updates Release
+  404  Not Found [IP: 91.189.92.20 80]
+Err:7 http://ports.ubuntu.com/ubuntu-ports noble-backports Release
+  404  Not Found [IP: 91.189.92.20 80]
+Err:8 http://ports.ubuntu.com/ubuntu-ports noble-security Release
+  404  Not Found [IP: 91.189.92.20 80]
+Reading package lists...
