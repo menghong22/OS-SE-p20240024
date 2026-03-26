@@ -1,0 +1,20 @@
+  341  ls 
+  342  mkdir lab3
+  343  ls
+  344  cd lab3
+  345  ls
+  346  cd os-se-p20240024/
+  347  l
+  348  cd os-class-activities-p20240024/
+  349  ls
+  350  mkdir activity2
+  351  ls
+  352  cd activity2
+  353  ls
+  354  nano forkchild.c
+  355  gcc -o forkchild forkchild.c
+  356  ./forkchild > result_forkchild.txt 2>&1
+  357  ls
+  358  cat result_forkchild.txt
+  359  ps -ef --forest | grep forkchild
+  360  history | tail -n 20 > command_used_forkchild.txt
