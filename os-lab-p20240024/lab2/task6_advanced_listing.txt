@@ -1,0 +1,140 @@
+
+--- Sort by Size: engineering/ (ls -LS) ---
+total 4
+-rw-rw-r-- 1 datastream datastream 26 Mar 21 07:16 frontend_config.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 index.html
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 styles.css
+total 8
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 10:05 pipeline.txt
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 07:16 server_config.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 app.js
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 database.sql
+total 12
+-rw-rw-r-- 1 datastream datastream 48 Mar 21 08:01 server_notice.txt
+-rw-rw-r-- 1 datastream datastream 34 Mar 21 10:03 security_audit.txt
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 07:16 pipeline.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 docker-compose.yml
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 Dockerfile
+
+--- sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-rw-r-- 1 datastream datastream 39 Mar 21 07:16 leave_policy.txt
+-rw-rw-r-- 1 datastream datastream 32 Mar 21 07:16 remote_work.txt
+total 8
+-rw-rw-r-- 1 datastream datastream 23 Mar 21 08:03 handbook.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 checklist.txt
+-rw-rw-r-- 1 datastream datastream 52 Mar 21 07:16 welcome_guide.txt
+total 8
+-rw-rw-r-- 1 datastream datastream 35 Mar 21 07:16 social_media.txt
+-rw-rw-r-- 1 datastream datastream 32 Mar 21 07:16 q1_2026_lanch.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 8
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 database.sql
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 app.js
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 07:16 server_config.txt
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 10:05 pipeline.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 8
+-rw-rw-r-- 1 datastream datastream 52 Mar 21 07:16 welcome_guide.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 checklist.txt
+-rw-rw-r-- 1 datastream datastream 23 Mar 21 08:03 handbook.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 datastream datastream 4.0K Mar 21 07:16 engineering
+drwxrwxr-x 4 datastream datastream 4.0K Mar 21 07:16 hr
+drwxrwxr-x 4 datastream datastream 4.0K Mar 21 10:07 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 10:05 backend
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 10:04 devops
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 10:47 frontend
+
+techcorp/engineering/backend:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 10:05 pipeline.txt
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 07:16 server_config.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 app.js
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 database.sql
+
+techcorp/engineering/devops:
+total 12K
+-rw-rw-r-- 1 datastream datastream 48 Mar 21 08:01 server_notice.txt
+-rw-rw-r-- 1 datastream datastream 34 Mar 21 10:03 security_audit.txt
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 07:16 pipeline.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 docker-compose.yml
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 datastream datastream 26 Mar 21 07:16 frontend_config.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 index.html
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 08:13 onboarding
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 10:04 policies
+
+techcorp/hr/onboarding:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream 52 Mar 21 07:16 welcome_guide.txt
+-rw-rw-r-- 1 datastream datastream 23 Mar 21 08:03 handbook.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream 39 Mar 21 07:16 leave_policy.txt
+-rw-rw-r-- 1 datastream datastream 32 Mar 21 07:16 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 08:06 assets
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 10:07 campaigns
+-rw-rw-r-- 1 datastream datastream    0 Mar 21 10:07 draft2.tmp
+
+techcorp/marketing/assets:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream 54 Mar 21 07:16 task3_directory_structure.txt
+-rw-rw-r-- 1 datastream datastream 22 Mar 21 08:02 logo_brief.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 banner.jpg
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 brochure.pdf
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream 35 Mar 21 07:16 social_media.txt
+-rw-rw-r-- 1 datastream datastream 32 Mar 21 07:16 q1_2026_lanch.txt
+Questions 6a: Files sorted by time (newest first)
+total 8
+-rw-rw-r-- 1 datastream datastream 23 Mar 21 08:03 handbook.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 checklist.txt
+-rw-rw-r-- 1 datastream datastream 52 Mar 21 07:16 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 08:06 assets
+drwxrwxr-x 2 datastream datastream 4.0K Mar 21 10:07 campaigns
+-rw-rw-r-- 1 datastream datastream    0 Mar 21 10:07 draft2.tmp
+
+techcorp/marketing/assets:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 banner.jpg
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 brochure.pdf
+-rw-rw-r-- 1 datastream datastream 22 Mar 21 08:02 logo_brief.txt
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 logo.png
+-rw-rw-r-- 1 datastream datastream 54 Mar 21 07:16 task3_directory_structure.txt
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 datastream datastream 32 Mar 21 07:16 q1_2026_lanch.txt
+-rw-rw-r-- 1 datastream datastream 35 Mar 21 07:16 social_media.txt
+total 12
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 Dockerfile
+-rw-rw-r-- 1 datastream datastream  0 Mar 21 07:16 docker-compose.yml
+-rw-rw-r-- 1 datastream datastream 29 Mar 21 07:16 pipeline.txt
+-rw-rw-r-- 1 datastream datastream 34 Mar 21 10:03 security_audit.txt
+-rw-rw-r-- 1 datastream datastream 48 Mar 21 08:01 server_notice.txt
