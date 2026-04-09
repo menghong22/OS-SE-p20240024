@@ -1,0 +1,20 @@
+=== Task 1: I/O Redirection ===
+--- sdout to file (overwrite) ---
+adduser.conf
+alsa
+alternatives
+anacrontab
+apg.conf
+apm
+apparmor
+apparmor.d
+apport
+apt
+--- stdout append ---
+First line
+Second line
+Third line
+--- stderr redirection ---
+ls: cannot access '/nonexistent_directory': No such file or directory
+--- seperate stdout and stderr ---
+--- stderr redirection ---
