@@ -1,0 +1,38 @@
+=== Task2: Pipelines & Filters ===
+--- Number of entries in /etc ---
+248
+--- Sorted unique names ---
+apple
+banana
+cherry
+zebra
+--- Count od each name ---
+      2 banana
+      2 apple
+      1 zebra
+      1 cherry
+--- First 5 users in /etc/passwd ---
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+--- Last 3 users in /etc/passwd ---
+gnome-remote-desktop:x:987:987:GNOME Remote Desktop:/var/lib/gnome-remote-desktop:/usr/sbin/nologin
+gnome-initial-setup:x:122:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:123:124:Gnome Display Manager:/var/lib/gdm3:/bin/false
+--- Uppercase to lowercase ---
+hello world from techcorp
+Remove duplpicate spaces ---
+too  many  spaces  here tr -s  
+--- Challenge Pipelines ---
+Challenge 2a Directory count in /etc ---
+149
+--- Challenge 2b: Last 5 users sorted ---
+usbmux
+uucp
+uuidd
+whoopsie
+www-data
+--- Challenge 2c: .conf fle count in /etc ---
+335
