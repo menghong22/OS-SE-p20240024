@@ -1,0 +1,13 @@
+=== Task 5: Orphan & Zombie Processes ===
+--- Orphan process observation ---
+Child PID: 4895, Original PPID: 4894, New PPID after parent exit: 1
+Child PID: 4978, Original PPID: 4977, New PPID after parent exit: 1782
+--- Zombie and Orphan Cleanup Notes ---
+Q: How are orphans cleaned up? A: <YOUR ANSWER>
+Q: How are zombies cleaned up? A: <YOUR ANSWER>
+Q: How are orphans cleaned up? A: They are adopted by a 'reaper' process (like systemd), which monitors them and cleans up their exit status when they finish.
+Q: How are zombies cleaned up? A: They are removed when the parent process calls wait(). If the parent fails to do this, killing the parent forces the zombie to be adopted and reaped by systemd.
+Q: How are zombies cleaned up? A: They are removed when the parent process calls wait(). If the parent fails to do this, killing the parent forces the zombie to be adopted and reaped by systemd.
+--- Challenge Orphan & Zombie ---
+--- Challenge 5a: Zombie Reaping ---
+Observation: Before wait(), the child was 'Z' (defunct). After wait(), the child entry was removed from the process table.
