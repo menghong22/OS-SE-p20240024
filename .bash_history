@@ -73,3 +73,18 @@ git add .
 git commit -m "push to server"
 git push origin master
 exit
+git pull origin master
+git add 
+git add .
+git commit -m "push to server"
+git push origin master
+ls
+cd os-a
+cd os-class-activities-p20240024/
+ls
+cd activity3
+ls
+cd task3_java/
+ls
+cd ..
+exit
