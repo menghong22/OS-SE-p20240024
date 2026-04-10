@@ -1,0 +1,1 @@
+strace: Cannot stat './task1/file_creator_lib': No such file or directory
