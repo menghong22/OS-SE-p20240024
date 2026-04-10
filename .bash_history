@@ -68,3 +68,8 @@ git add .
 git commit -m "push lab1 final to server"
 git push origin master
 exit
+git pull origin master 
+git add .
+git commit -m "push to server"
+git push origin master
+exit
