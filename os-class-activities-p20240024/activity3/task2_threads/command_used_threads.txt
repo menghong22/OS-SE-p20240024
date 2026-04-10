@@ -1,0 +1,20 @@
+ 1250  $ wait
+ 1251  $ cat result_server.txt result_client.txt > result_socket.txt
+ 1252  ./server > result_server.txt 2>&1 &
+ 1253  sleep 1
+ 1254  ./client > result_client.txt 2>&1
+ 1255  wait
+ 1256  cat result_server.txt result_client.txt > result_socket.txt
+ 1257  $ history | tail -n 20 > command_used_socket.txt
+ 1258  history | tail -n 20 > command_used_socket.txt
+ 1259  cd ..
+ 1260  mkdir task2_threads
+ 1261  cd task2_threads/
+ 1262  nano threads.c
+ 1263  $ gcc -o threads threads.c -pthread
+ 1264  gcc -o threads threads.c -pthread
+ 1265  ./threads > result_threads.txt 2>&1
+ 1266  cat result_threads.txt
+ 1267  nano threads_mutex.c
+ 1268  gcc -o threads_mutex threads_mutex.c -pthread
+ 1269  history | tail -n 20 > command_used_threads.txt

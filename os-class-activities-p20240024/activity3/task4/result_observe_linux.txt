@@ -1,0 +1,8 @@
+    PID TTY          TIME CMD
+   5436 pts/0    00:00:00 threads_observe
+--- /proc/task/ listing ---
+5436
+5437
+5438
+5439
+5440
