@@ -56,3 +56,10 @@ git push origin master
 git stash pop           # This brings your extra changes back (optional)
 cd ..
 git push origin master
+git add ,
+ls
+git pull origin master
+git add .
+git commit -m "push to sir server"
+git push origin master
+exit
