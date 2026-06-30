@@ -1,0 +1,2 @@
+*/5 * * * * /home/se-chin-menghong/bin/backup_project
+00 16 30 06 * echo 'Executing targeted final exam snapshot pipeline' >> /home/se-chin-menghong/os-se-p20240024/final-exam/partE_automation/logs/cron_oneshot.log 2>&1

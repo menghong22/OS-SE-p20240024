@@ -1,0 +1,21 @@
+#!/bin/bash
+set -euo pipefail
+
+if [ ! -f stock.txt ]; then
+    echo "100" > stock.txt
+fi
+
+# Read the shared resource value
+current_stock=$(cat stock.txt)
+
+# Open an artificial delay window to force a concurrent race condition split
+sleep 0.1
+
+# Decrement value
+new_stock=$((current_stock - 1))
+if [ $new_stock -lt 0 ]; then
+    new_stock=0
+fi
+
+# Overwrite resource state
+echo "$new_stock" > stock.txt

@@ -1,0 +1,35 @@
+#!/bin/bash
+set -euo pipefail
+
+# Bind an exclusive advisory lock file handle descriptor (using FD 200)
+exec 200>stock.lock
+
+# Blocks execution path right here until the lock is completely acquired
+flock -x 200
+
+# --- CRITICAL SECTION START ---
+current_stock=$(cat stock.txt)
+sleep 0.1
+new_stock=$((current_stock - 1))
+
+if [ $new_stock -lt 0 ]; then
+    new_stock=0
+fi
+
+echo "$new_stock" > stock.txt
+# --- CRITICAL SECTION END ---
+
+# Release lock implicitly by closing the file descriptor
+exec 200>&-
+# 1. Create the patched swarm test file
+cat << 'EOF' > patched_swarm
+#!/bin/bash
+set -euo pipefail
+
+echo "Launching 50 locked concurrent processes..."
+for i in {1..50}; do
+    ./buy_product_locked &
+done
+
+wait
+echo "All locked processes completed."

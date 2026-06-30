@@ -1,0 +1,7 @@
+# file: home/se-chin-menghong/secure_share/private.dat
+# owner: se-chin-menghong
+# group: se-chin-menghong
+user::rw-
+group::---
+other::---
+

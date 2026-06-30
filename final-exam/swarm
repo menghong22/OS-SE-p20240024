@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "Launching 50 concurrent buying processes simultaneously..."
+for i in {1..50}; do
+    ./buy_product &
+done
+
+wait
+echo "All processes completed."
